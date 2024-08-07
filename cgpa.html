@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA/CGPA Calculator</title>
+    <link rel="stylesheet" href="cgpa.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SGPA/CGPA Calculator</h1>
+        <form id="calculatorForm">
+            <div class="input-group">
+                <label for="semesters">Number of Semesters:</label>
+                <input type="number" id="semesters" name="semesters" min="1" required>
+            </div>
+            <div id="semestersInput"></div>
+            <button type="button" onclick="calculateCGPA()">Calculate CGPA</button>
+        </form>
+        <div id="result"></div>
+        <a href="index.html">CLICK to calculate sgpa</a>
+    </div>
+    <script src="cgpa.js"></script>
+</body>
+</html>

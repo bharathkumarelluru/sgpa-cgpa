@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Bharath kumar</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA Calculator</title>
+    <link rel="stylesheet" href="sgpa.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SGPA Calculator</h1>
+        <form id="subjectForm">
+            <div class="input-group">
+                <label for="subjectName">Subject Name:</label>
+                <input type="text" id="subjectName" required>
+            </div>
+            <div class="input-group">
+                <label for="subjectCredits">Credits:</label>
+                <input type="number" id="subjectCredits" min="1" required>
+            </div>
+            <div class="input-group">
+                <label for="subjectGrade">Grade:</label>
+                <input type="text" id="subjectGrade" required>
+            </div>
+            <button type="button" onclick="addSubject()">Add Subject</button>
+        </form>
+        <table id="subjectsTable">
+            <thead>
+                <tr>
+                    <th>Subject Name</th>
+                    <th>Credits</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Subjects will be added here -->
+            </tbody>
+        </table>
+        <button id="calculateButton" onclick="calculateSGPA()">Calculate SGPA</button>
+        <div id="result">
+            <h2>Your SGPA is: <span id="sgpa"></span></h2>
+            <a href="cgpa.html">CLICK to calculate cgpa</a>
+        </div>
+    </div>
+    <script src="sgpa.js"></script>
+</body>
+</html>
